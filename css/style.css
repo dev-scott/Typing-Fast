@@ -854,6 +854,7 @@ body .contain_body .contain_contact .contact .right .message .contain_email .nam
   border: 1.5px solid #EEF1F3;
   border-radius: 10px;
   padding-left: 20px;
+  outline: none;
 }
 body .contain_body .contain_contact .contact .right .message .contain_email .email {
   margin-left: 10px;
@@ -870,7 +871,17 @@ body .contain_body .contain_contact .contact .right .message .contain_email .ema
   }
   body .contain_body .contain_contact .contact .right .message .contain_email .email {
     margin-left: 0px;
-    width: 340px;
+    width: 100%;
+    height: 48px;
+    padding-left: 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 1.5px solid #EEF1F3;
+    margin-top: 10px;
+  }
+  body .contain_body .contain_contact .contact .right .message .contain_email .name {
+    margin-left: 0px;
+    width: 100%;
     height: 48px;
     padding-left: 20px;
     outline: none;
