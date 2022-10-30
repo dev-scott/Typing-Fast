@@ -660,6 +660,12 @@ body .contain_body .contain_member .contain_card .card .footer_card h1 {
   line-height: 18px;
   color: #FFFFFF;
 }
+@media (max-width: 750px) {
+  body .contain_body .contain_member .contain_card .card {
+    width: 200px;
+    height: 370px;
+  }
+}
 body .contain_body .contain_contact {
   display: flex;
   justify-content: center;
