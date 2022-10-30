@@ -8,7 +8,7 @@ function navToggle() {
     const nav = document.querySelector(".contain_nav");
     nav.classList.toggle("open");
     if (nav.classList.contains("open")) {
-        nav.style.maxHeight = nav.scrollHeight + "px";
+        nav.style.maxHeight = "400px";
     }
     else {
         nav.removeAttribute("style");
