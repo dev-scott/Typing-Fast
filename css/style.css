@@ -612,171 +612,53 @@ body .contain_body .contain_about .right .contain_card button {
     padding: 0 50px;
   }
 }
-body .contain_body .contain_membre {
-  margin: 0 auto;
-  max-height: min-content;
+body .contain_body .contain_member {
+  width: 100%;
+  height: min-content;
+}
+body .contain_body .contain_member .contain_card {
   width: 80%;
+  height: min-content;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .contain_body .contain_member .contain_card .card {
+  margin-bottom: 10px;
+  position: relative;
+  width: 450px;
+  height: 600px;
+  border: 4px;
+  background-color: white;
+}
+body .contain_body .contain_member .contain_card .card .image {
+  width: 100%;
+  height: 100%;
+}
+body .contain_body .contain_member .contain_card .card .image img {
+  width: 100%;
+  height: 100%;
+}
+body .contain_body .contain_member .contain_card .card .footer_card {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #2C2925;
+  color: white;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
-body .contain_body .contain_membre .title_member {
-  width: 100%;
-}
-body .contain_body .contain_membre .title_member h1 {
-  text-align: center;
-  position: relative;
+body .contain_body .contain_member .contain_card .card .footer_card h1 {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 38px;
-  /* identical to box height, or 95% */
-  letter-spacing: -0.02em;
-  color: #1C1A17;
-}
-body .contain_body .contain_membre .title_member h1::after {
-  content: "";
-  position: absolute;
-  margin: auto;
-  width: 10%;
-  height: 2px;
-  background: #FDB135;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  bottom: -15px;
-}
-body .contain_body .contain_membre section {
-  margin-top: 60px;
-  position: relative;
-  max-height: min-content;
-  width: 80%;
-  display: flex;
-  align-items: center;
-}
-body .contain_body .contain_membre section .swiper {
-  width: 950px;
-}
-body .contain_body .contain_membre section .swiper .card {
-  position: relative;
-  background: #fff;
-  border-radius: 20px;
-  margin: 20px 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-body .contain_body .contain_membre section .swiper .card .card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  position: relative;
-  z-index: 100;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .image {
-  height: 140px;
-  width: 140px;
-  border-radius: 50%;
-  padding: 3px;
-  background: #7d2ae8;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .media-icons {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .media-icons i {
-  color: #fff;
-  opacity: 0.6;
-  margin-top: 10px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .media-icons i:hover {
-  opacity: 1;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .name-profession {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
-  /* color: ; */
-}
-body .contain_body .contain_membre section .swiper .card .card-content .name-profession .name {
-  font-size: 20px;
-  font-weight: 600;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .name-profession .profession {
-  font-size: 15px;
-  font-weight: 500;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .rating {
-  display: flex;
-  align-items: center;
-  margin-top: 18px;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .rating i {
-  font-size: 18px;
-  margin: 0 2px;
-  color: #7d2ae8;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .button {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .button button {
-  background: #7d2ae8;
-  outline: none;
-  border: none;
-  color: #fff;
-  padding: 8px 22px;
-  border-radius: 20px;
   font-size: 14px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-body .contain_body .contain_membre section .swiper .card .card-content .button button:hover {
-  background: #6616d0;
-}
-body .contain_body .contain_membre section .swiper .card::before {
-  content: "";
-  position: absolute;
-  height: 40%;
-  width: 100%;
-  background: #7d2ae8;
-  border-radius: 20px 20px 0 0;
-}
-body .contain_body .contain_membre section .swiper-pagination {
-  position: absolute;
-}
-body .contain_body .contain_membre section .swiper-pagination-bullet {
-  height: 7px;
-  width: 26px;
-  border-radius: 25px;
-  background: #7d2ae8;
-}
-body .contain_body .contain_membre section .swiper-button-next,
-body .contain_body .contain_membre section .swiper-button-prev {
-  opacity: 0.7;
-  color: #7d2ae8;
-  transition: all 0.3s ease;
-}
-body .contain_body .contain_membre section .swiper-button-next:hover,
-body .contain_body .contain_membre section .swiper-button-prev:hover {
-  opacity: 1;
-  color: #7d2ae8;
+  line-height: 18px;
+  color: #FFFFFF;
 }
 body .contain_body .contain_contact {
   display: flex;
